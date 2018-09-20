@@ -1,7 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
 // @ts-ignore
-import bg from "./bg.jpg";
 
 export const FlexCenter = styled.div`
   display: flex;
@@ -28,12 +27,6 @@ export const White = styled.div`
   width: 100%;
   min-height: 100vh;
   box-shadow: 0px 0px 2px 2px rgba(100, 100, 100, 0.7);
-`;
-
-export const SampleImageBackground = styled.div`
-  background-image: url(${bg});
-  background-size: cover;
-  height: 100%;
 `;
 
 export const ImageBackground = styled.div<{ img: string }>`
