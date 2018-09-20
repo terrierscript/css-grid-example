@@ -83,17 +83,6 @@ const Day: SFC<{ date: DateTime }> = ({ date }) => {
   );
 };
 
-// console.log(
-//   JSON.stringify(
-//     generateFilledCalendar(year, month).map((item) => {
-//       return item.map((item) => {
-//         return !item ? item : `${item.day}`;
-//       });
-//     }),
-//     null
-//   )
-// );
-
 const generateCalendar = (year, month) => {
   return generateFilledCalendar(year, month).reduce((curr, item) => {
     return [...curr, ...item];

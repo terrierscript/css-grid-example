@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React, { SFC, Component, ReactNode } from "react";
+import React, { SFC } from "react";
 
 const template = `
   "qq qq ww ww ee ee rr rr tt tt yy yy uu uu ii ii oo oo pp pp"
@@ -31,29 +31,11 @@ const Key = styled.div`
   border-radius: 5px;
 `;
 
-class KeyEvent extends Component<{ children: (props: any) => ReactNode }> {
-  state = {
-    down: {}
-  };
-  onKeydown = (e) => {
-    console.log(e.target);
-  };
-  onKeyup = (e) => {};
-  render() {
-    console.log("aaa");
-    return (
-      <div onKeyDown={this.onKeydown} onKeyUp={this.onKeyup}>
-        {this.props.children({ down: this.state.down })}
-      </div>
-    );
-  }
-}
 // @ts-ignore
-const KeyMaps: SFC<{ down: any }> = ({ down }) => {
+const KeyMaps: SFC<{ down: any }> = () => {
   const keys = "abcdefghijklmnopqrstuvwxyz".split("");
   return keys.map((k) => {
     const area = `${k}${k}`;
-
     return (
       <Area area={area} key={area}>
         <Key>{k.toUpperCase()}</Key>
@@ -64,12 +46,12 @@ const KeyMaps: SFC<{ down: any }> = ({ down }) => {
 
 export const Keyboard = () => {
   return (
-    <KeyEvent>
+    <div>
       {(down) => (
         <Grid>
           <KeyMaps down={down} />
         </Grid>
       )}
-    </KeyEvent>
+    </div>
   );
 };

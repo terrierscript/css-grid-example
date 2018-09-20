@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import React from "react";
 import { transpose } from "transpose-matrix";
 import { withMediaStyle } from "components/style/responsive";
