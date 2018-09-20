@@ -4,23 +4,23 @@ import photo from "./photo.png";
 import { Area } from "components/grid/Grid";
 
 const template = `
-"	tl  tl    tl    ts      .     .	    .	    .	    ln1	  ln1	  ln1	"	2px
-"	tl  tl    tl    ts      .     .	    .	    .	    ln2	  photo	ln3	"	1fr
-"	.   .     .     .       .	    .	    .	    .	    ln2	  photo	ln3	"	1fr
-"	ln7	ln7	  ln7	  ln7	    ln7	  .	    .	    .	    ln2	  photo	ln3	"	2px
-"	ln8	.     kanaf	kanal	  ln6	  .	    .	    .	    ln2	  photo	ln3	"	2em
-"	ln8	ln11	ln11	ln11	  ln6	  .	    .	    .	    ln2	  photo	ln3	"	1px
-"	ln8	.     namef	namel	  ln6	  .	    .	    .	    ln2	  photo	ln3 "	0.1fr
-"	ln8	.     namef	namel	  ln6	  .	    .	    .	    ln2	  photo	ln3	"	5em
-"	ln8	ln12  ln12  ln12	  ln6	  .	    .	    .	    ln2	  photo	ln3	"	1px
-"	ln8	.     birth	gender	ln6	  .	    .	    .	    ln4	  ln4	  ln4	"	2px
-"	ln8	.     birth	gender	ln6	  .	    .	    .	    .	    .	    .	    "	2em
-"	ln8	ln13  ln13  ln13 	  ln5	  ln5   ln5   ln5   ln5	  ln5   ln5	"	2px
-"	ln8	.	    zip	  zip	    zip	  zip   ln15  email  phone phone ln10	"	2em
-"	ln8	ln14	ln14	ln14	  ln14  ln14  ln15 	email 	phone phone ln10	"	1px
-"	ln8	.     place	place	  place	place	ln15	email	phone	phone ln10	"	3em
-"	ln9	ln9	  ln9	  ln9	    ln9	  ln9	  ln9	  ln9	  ln9	  ln9   ln9	"	2px
-/	2px 10px  1fr   1fr	    2px	  0.1fr	2px   2px   2px	  0.7fr	2px		
+"	tl  tl    tl    ts      .     .	    .	    ln1	  ln1	  ln1	"	2px
+"	tl  tl    tl    ts      .     .	    .	    ln2	  photo	ln3	"	1fr
+"	.   .     .     .       .	    .	    .	    ln2	  photo	ln3	"	1fr
+"	ln7	ln7	  ln7	  ln7	    ln7	  .	    .	    ln2	  photo	ln3	"	2px
+"	ln8	.     kanaf	kanal	  ln6	  .	    .	    ln2	  photo	ln3	"	2em
+"	ln8	ln11	ln11	ln11	  ln6	  .	    .	    ln2	  photo	ln3	"	1px
+"	ln8	.     namef	namel	  ln6	  .	    .	    ln2	  photo	ln3 "	0.1fr
+"	ln8	.     namef	namel	  ln6	  .	    .	    ln2	  photo	ln3	"	5em
+"	ln8	ln12  ln12  ln12	  ln6	  .	    .	    ln2	  photo	ln3	"	1px
+"	ln8	.     birth	gender	ln6	  .	    .	    ln4	  ln4	  ln4	"	2px
+"	ln8	.     birth	gender	ln6	  .	    .	    .	    .	    .	    "	2em
+"	ln8	ln13  ln13  ln13 	  ln5	  ln5   ln5   ln5	  ln5   ln5	"	2px
+"	ln8	.	    zip	  zip	    zip	  zip   ln15  phone phone ln10	"	2em
+"	ln8	ln14	ln14	ln14	  ln14  ln14  ln15 	phone phone ln10	"	1px
+"	ln8	.     place	place	  place	place	ln15	phone	phone ln10	"	3em
+"	ln9	ln9	  ln9	  ln9	    ln9	  ln9	  ln9	  ln9	  ln9   ln9	"	2px
+/	2px 10px  1fr   1fr	    2px	  0.1fr	2px   2px	  0.7fr	2px		
 `;
 const Grid = styled.div`
   background: white;
